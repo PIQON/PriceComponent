@@ -1,8 +1,9 @@
 :root {
-  --color-primary-500: hsl(179, 65%, 26%);
+  --color-primary-500: hsl(179, 55%, 40%);
   --color-primary-400: hsl(179, 62%, 43%);
   --color-primary-300: hsl(71, 73%, 54%);
   --color-neutral-400: hsl(204, 43%, 93%);
+  --color-neutral-200: hsl(0, 0%, 100%);
   --color-neutral-300: hsl(218, 22%, 67%);
 }
 
@@ -29,12 +30,135 @@ body {
   background-color: var(--color-neutral-300);
 }
 
+.u-margin-bottom-small {
+  margin-bottom: 1rem;
+}
+.u-margin-bottom-medium {
+  margin-bottom: 1.728rem;
+}
+
 .wrapper {
-  --width: 40rem;
+  --width: 50rem;
   max-width: var(--width);
   margin: 0 auto;
+  padding: 1rem;
+}
+
+.heading__primary {
+  font-size: 1.728rem;
+  color: var(--color-primary-400);
+}
+
+.heading__secondary {
+  font-size: 1.44rem;
+  color: var(--color-neutral-200);
+}
+
+.subtitle {
+  font-size: 1.2rem;
+  color: var(--color-primary-300);
 }
 
 .section-join {
-  padding: 1rem 0;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+  border-radius: 11px;
+  overflow: hidden;
+}
+
+.description {
+  font-size: 1.2rem;
+  line-height: 1.5;
+  color: var(--color-neutral-300);
+}
+
+.section-join > * {
+  padding: 2rem;
+}
+
+.intro {
+  background-color: var(--color-neutral-400);
+  grid-column: 1/-1;
+}
+
+.subscription {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--color-primary-500);
+}
+
+.why-us {
+  background-color: var(--color-primary-400);
+}
+
+.price {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.price strong {
+  font-size: 3rem;
+  color: var(--color-neutral-200);
+}
+
+.price span {
+  color: var(--color-neutral-400);
+}
+
+.subscription__addition {
+  color: var(--color-neutral-200);
+}
+
+.list {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.576rem;
+}
+
+.list__item {
+  color: var(--color-neutral-400);
+}
+
+.btn {
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+  font-family: inherit;
+}
+
+.btn--sign {
+  padding: 1rem;
+  border-radius: 9px;
+  background-color: var(--color-primary-300);
+  color: var(--color-neutral-200);
+  font-weight: 500;
+  font-size: 1.2rem;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 37.5rem) {
+  .heading__primary {
+    font-size: 1.44rem;
+  }
+
+  .heading__secondary {
+    font-size: 1.2rem;
+  }
+
+  .subtitle {
+    font-size: 1rem;
+  }
+  .description {
+    font-size: 1rem;
+  }
+
+  .wrapper {
+    --width: 30rem;
+  }
+  .section-join {
+    grid-template-columns: 1fr;
+  }
 }
