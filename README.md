@@ -1,21 +1,21 @@
 <p id="readme-top"></p>
 <div align="center">
-  <h3 align="center">Skilled Elearning Landing Page</h3>
+  <h3 align="center">Price Component</h3>
 
   <p align="center">
-     Skilled ELearning Landing Page based on frontend mentor design..
+     Price Component based on frontend mentor design..
     <br />
     <br />
-    <a href="https://skilled-landing-page.vercel.app/">View a project demo</a>
+    <a href="https://price-component-ochre.vercel.app/">View a project demo</a>
   </p>
 
-![My Image](assets/preview.jpg)
+![My Image](images/preview.png)
 
 </div>
 
 ## LIGTHOUSE STATISTICS
 
-![My Image](assets/lighthouse.png)
+![My Image](images/lighthouse.png)
 
 <!-- TABLE OF CONTENTS -->
 <details>
