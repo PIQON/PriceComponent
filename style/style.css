@@ -19,3 +19,22 @@ body {
   font-weight: 400;
   line-height: 1;
 }
+
+.main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  min-height: 100vh;
+  background-color: var(--color-neutral-300);
+}
+
+.wrapper {
+  --width: 40rem;
+  max-width: var(--width);
+  margin: 0 auto;
+}
+
+.section-join {
+  padding: 1rem 0;
+}
